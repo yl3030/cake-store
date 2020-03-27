@@ -133,194 +133,46 @@ nav ol li a:hover {
 	overflow: hidden;
 }
 
-/* --------------------------- */
-/* 最新消息 */
-#new-box {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	vertical-align: center;
-	grid-gap: 10px;
-	color: #e6b800;
-	max-width: 1200px;
-	margin: 0px auto 100px;
-	padding: 10px 0;
-	background-color: #f5f5f5;
-}
-
-#active,
-#discount {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	/* background:#e6b800; */
-	padding: 10px 50px;
-	border-radius: 5px;
-}
-
-.content {
-	vertical-align: top;
-	/* background-color: indianred; */
-}
-
-.content h1 {
-	font-size: 36px;
-}
-
-.new-img {
-	grid-row-start: 1;
-	grid-row-end: 3;
-	grid-column-start: 2;
-	grid-column-end: 3;
-	/* background-color: gold; */
-}
-
-.new-img img {
-	height: 130px;
-}
-
-.more {
-	/* background-color: lightblue; */
-}
-
-.more a {
-	font-size: 16px;
-	color: #e6b800;
-	text-decoration: none;
-	font-size: 20px;
-	border-radius: 30px;
-	display: inline-block;
-	padding: 10px 20px;
-	border: 1px solid #e6b800;
-}
-
-.more a:hover {
-	color: #fff;
-	background-color: #e6b800;
-}
-
-/* --------------------------- */
-
-/* ICON按鈕 */
-#icon {
-	text-align: center;
-	max-width: 1000px;
-	margin: 0 auto 100px;
-}
-
-#icon h1 {
-	font-size: 36px;
-	color: #e6b800;
-	margin: 50px 0;
-}
-
-#icon-title {
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	/* grid-gap: 50px; */
-}
-
-.iocn-menu {
-	text-align: center;
-	background-color: gray;
-	font-size: 21px;
-	margin: 20px 0;
-}
-
-.icon-menu p {
-	font-size: 20px;
-	/* 平板、手機狀況 */
-	margin-bottom: 30px;
-}
-
-.icon-pic {
-	/* width: 150px; */
-	margin: 10px auto;
-}
-
-.icon-pic a img {
-	width: 100px;
-}
-
-.icon-pic a img:hover {
-	border: 3px solid #e6b800;
-	border-radius: 10px;
-	padding: 5px;
-}
-
-/*#icon ul li.active {
-	border-bottom: 1px solid #fff;
-	background: #fff;
-}*/
-
-/* ICON內容 */
-#i-content {
-	max-width: 1200px;
-	margin: 0 auto;
-	/* height: 600px; */
-	font-size: 20px;
-}
-
-.fake-nav {
-	height: 100px;
-	/* background-color: pink; */
-}
-
-.icon-inner {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	/* clear: both; */
-	color: #000;
-	padding: 15px;
-	margin: 20px 0;
-	text-align: center;
-}
-
-.cake-title {
-	background-color: #e6b800;
-	padding: 20px 0;
-}
-
-.cake-title h1 {
-	color: #fff;
-	text-align: center;
-}
-
-.price-size {
-	font-size: 18px;
-	margin: 5px 0;
-}
-
-.amount-size {
-	font-size: 20px;
-	margin: 0 5px;
-}
-
-.btn {
-	padding: 3px 10px;
-	margin: 0 5px;
-	cursor: pointer;
-	border: 0;
-	font-size: 20px;
-	background-color: #e6b800;
-	color: #fff;
-}
-
-.c1,
-.c2,
-.c3,
-.c4,
-.c5 {
-	width: 200px;
-	height: 200px;
-	margin: 20px 0;
-}
-
-.cake p {
-	padding-top: 5px;
-	color: #707070;
-	font-family: 微軟正黑體;
-	font-weight: bold;
-	font-size: 20px;
-}
+/* 表格 */
+form{
+    margin:3% 20%;
+    width:60%;
+  }
+  label{
+    font-weight: bold;
+    color: #2F2F2F;
+    font-size: 18px;
+  }
+  #name,#email,#question{
+    width: 100%;
+    margin-bottom:20px;
+    padding: 6px ;
+    font-size:16px;
+    border:1px solid #e6b800;
+    border-radius:5px;
+    clear:both;
+  }
+  #question{
+    height:500px;
+  }
+  /* 按鈕 */
+  #button{
+    text-align: center;
+    font-size: 18px;
+  }
+  #reset,#submit{
+    text-align:center;
+    margin:0 10px;
+    padding:1% 30px;
+    background-color:#e6b800;
+    border:0;
+    cursor:pointer;
+    /* font-weight: bold; */
+    border-radius:5px;
+    color: #FFF;
+    font-size: 16px;
+  }
+  
 
 /* 聯絡方式 */
 
@@ -360,12 +212,16 @@ footer {
 	#discount {
 		grid-template-columns: 1fr;
 		grid-gap: 10px;
-		text-align: center;
 	}
 
 	.content {
 		margin-left: 0px;
+		text-align: center;
 		/* background-color: indianred; */
+	}
+
+	.content a {
+		font-size: 20px;
 	}
 
 	.more {
@@ -373,11 +229,8 @@ footer {
 	}
 
 	.new-img {
-		grid-row-start: 2;
-		grid-row-end: 3;
-		grid-column-start: 1;
-		grid-column-end: 2;
-		/* background-color: gold; */
+		margin: 0 auto;
+		background-color: gold;
 	}
 
 	/* icon title */
@@ -413,25 +266,19 @@ footer {
 
 	#active,
 	#discount {
-		grid-template-columns: 1fr;
-		grid-gap: 10px;
-		text-align: center;
+		grid-template-columns: 1fr 1fr;
 	}
 
-	.content {
-		margin-left: 0px;
-		/* background-color: indianred; */
+	.content a {
+		font-size: 20px;
 	}
 
 	.more {
-		margin: 5px 0;
+		margin: 20px 0;
 	}
 
 	.new-img {
-		grid-row-start: 1;
-		grid-row-end: 3;
-		grid-column-start: 2;
-		grid-column-end: 3;
+		margin-right: 150px;
 		/* background-color: gold; */
 	}
 
@@ -463,25 +310,19 @@ footer {
 
 	#active,
 	#discount {
-		grid-template-columns: 1fr 1fr;
-		/* grid-gap: 10px; */
-		text-align: center;
+		grid-template-columns: 40% 60%;
 	}
 
-	.content {
-		margin-left: 0px;
-		/* background-color: indianred; */
+	.content a {
+		font-size: 16px;
 	}
 
 	.more {
-		margin: 5px 0;
+		margin: 30px 0;
 	}
 
 	.new-img {
-		grid-row-start: 1;
-		grid-row-end: 3;
-		grid-column-start: 2;
-		grid-column-end: 3;
+		margin-right: 150px;
 		/* background-color: gold; */
 	}
 

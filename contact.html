@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./contact.css">
+    <title>烘焙坊-Yulita</title>
+    <!-- Bootstrap CDN 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+-->
+</head>
+
+<body>
+    <!-- 導覽列 -->
+    <nav>
+        <div id="logo"><a href="index.html"><img src="https://i.ibb.co/Ms769NF/logo-black.jpg"
+                    alt="烘焙坊-Yulita-LOGO"></a></div>
+
+        <ol>
+            <li><a href="story.html">品牌故事</a></li>
+            <span>︱</span>
+            <li><a href="news.html">最新消息</a></li>
+            <span>︱</span>
+            <li><a href="contact.html">聯絡我們</a></li>
+        </ol>
+
+        <div id="car">
+            <img src="https://fakeimg.pl/10x15/?retina=1&text=car&font=noto" alt="烘焙坊-Yulita-car">
+            <span id="price"></span>
+        </div>
+    </nav>
+
+    <!-- 漢堡鍵 -->
+    <div id="menu">
+        <img src="./img/menu.png" alt="menu">
+        <div id="menu-box">
+            <ul>
+                <li><a href="#">
+                        <div id="list-box">首頁</div>
+                    </a></li>
+                <li><a href="#">品牌故事</a></li>
+                <li><a href="#">最新消息</a></li>
+                <li><a href="#">聯絡我們</a></li>
+                <li><a href="#">購物車</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 橫幅 -->
+    <div id="banner-box">
+        <section id="banner">
+        </section>
+    </div>
+
+    <!-- 表格 -->
+    <form>
+        <label for="name">問題分類：</label><br>
+        <select id="name" name="name">
+            <option value="select" selected disabled>--請選擇您的問題分類--</option>
+            <option value="purch">購買流程</option>
+            <option value="pd">產品問題</option>
+            <option value="info">優惠資訊</option>
+        </select>
+        <br>
+
+        <label for="email phone">電子信箱/電話號碼：</label><br>
+        <input type="email phone" placeholder="請輸入您的聯絡方式" name="email" id="email" required><br>
+
+        <label for="text">請填寫問題：</label><br>
+        <textarea cols="50" rows="5" type="text" placeholder="小提醒:越詳述越能得到更準確地回答喔!" name="question" id="question"
+            required></textarea>
+
+        <!--按鈕-->
+        <div class="send border mt10">
+            <div id="button">
+                <input type="reset" value="重新輸入" id=reset></input>
+                <input type="submit" value="確認送出" id=submit></input>
+                </button></div>
+        </div>
+
+    </form>
+
+
+    <!--  聯絡方式 -->
+    <div id="contract">
+        <H1>聯絡方式</H1>
+        <section>電話:03-1234567</section>
+        <section>地址:桃園市中壢區赫綵路233號</section>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer id="footer">
+
+        <p>&copy;2020.Yulita ALL right service.</p>
+
+
+    </footer>
+    <!-- Bootstrap CDN 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+        -->
+
+</body>
+
+</html>
