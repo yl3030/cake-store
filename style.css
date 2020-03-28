@@ -6,7 +6,7 @@
 }
 
 /* 導覽列 */
-nav {
+#nb {
 	display: flex;
 	justify-content: space-between;
 	padding: 15px 20px;
@@ -45,6 +45,7 @@ nav ol li a {
 
 nav ol li a:hover {
 	color: #e6b800;
+	text-decoration: none;
 }
 
 /* ＬＯＧＯ */
@@ -145,30 +146,10 @@ nav ol li a:hover {
 	border-radius: 50px;
 }
 
-/* 連播圖 */
-/* #banner {
-	height: 100vh;
-	background-image: url(https://images.unsplash.com/photo-1560180474-e8563fd75bab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);
-	background-size: cover;
-	margin-top: -100px;
-	transition: 3s;
-}
-
-#banner:hover {
-	transform: scale(1.15);
-}
-
-#banner-box {
-	overflow: hidden;
-} */
-
-.carousel-inner {
-	/* background-color: gray; */
-}
-
-.carousel-inner img{
-	margin: 0 auto;
-	object-fit: cover;
+/* 輪播圖 */
+.carousel-item img {
+    height:500px ;
+    object-fit: cover;
 }
 
 /* --------------------------- */
@@ -201,6 +182,8 @@ nav ol li a:hover {
 
 .content h1 {
 	font-size: 36px;
+	font-weight: 900;
+	text-align: right;
 }
 
 .new-img {
@@ -217,16 +200,16 @@ nav ol li a:hover {
 
 .more {
 	/* background-color: lightblue; */
+	text-align: right;
 }
 
 .more a {
 	font-size: 16px;
 	color: #e6b800;
 	text-decoration: none;
-	font-size: 20px;
 	border-radius: 30px;
 	display: inline-block;
-	padding: 10px 20px;
+	padding: 8px 15px;
 	border: 1px solid #e6b800;
 }
 
@@ -271,7 +254,6 @@ nav ol li a:hover {
 }
 
 .icon-pic {
-	/* width: 150px; */
 	margin: 10px auto;
 }
 
@@ -301,7 +283,6 @@ nav ol li a:hover {
 .icon-inner {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	/* clear: both; */
 	color: #000;
 	padding: 15px;
 	margin: 20px 0;
@@ -356,6 +337,73 @@ nav ol li a:hover {
 	font-size: 20px;
 }
 
+/* 數量按鈕 */
+
+.quantity {
+	width: 55px;
+	
+  }
+  input[type="number"] {
+	-webkit-appearance: textfield;
+	-moz-appearance: textfield;
+	appearance: textfield;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+  }
+  
+  .number-input {
+	border: 2px solid #ddd;
+	display: inline-flex;
+  }
+  
+  .number-input,
+  .number-input * {
+	box-sizing: border-box;
+  }
+  
+  .number-input button {
+	outline:none;
+	-webkit-appearance: none;
+	background-color: transparent;
+	border: none;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	margin: 0;
+	position: relative;
+  }
+  
+  .number-input button:before,
+  .number-input button:after {
+	display: inline-block;
+	position: absolute;
+	content: '';
+	width: 10px;
+	height: 2px;
+	background-color: #212121;
+	transform: translate(-50%, -50%);
+  }
+  .number-input button.plus:after {
+	transform: translate(-50%, -50%) rotate(90deg);
+  }
+  
+  .number-input input[type=number] {
+	font-family: sans-serif;
+	max-width: 50px;
+	padding: 1px;
+	border: solid #ddd;
+	border-width: 0 2px;
+	font-size: 20px;
+	height: 30px;
+	font-weight: bold;
+	text-align: center;
+  }
+
 /* 聯絡方式 */
 
 #contract {
@@ -392,7 +440,7 @@ footer {
 	}
 
 	/* 導覽列 */
-	nav {
+	#nb {
 		display: none;
 	}
 	/* 最新消息 */
@@ -446,7 +494,7 @@ footer {
 	}
 
 	/* 導覽列 */
-	nav {
+	#nb {
 		display: none;
 	}
 

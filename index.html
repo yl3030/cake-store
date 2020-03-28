@@ -15,7 +15,7 @@
 
 <body>
     <!-- 導覽列 -->
-    <nav>
+    <nav id="nb">
         <div id="nav-arrange">
             <div id="logo"><a href="index.html"><img src="https://i.ibb.co/Ms769NF/logo-black.jpg"
                         alt="烘焙坊-Yulita-LOGO"></a></div>
@@ -50,51 +50,41 @@
         </div>
     </div>
 
-    <!-- 橫幅 -->
-    <!-- <div id="banner-box">
-        <section id="banner">
-        </section>
-    </div> -->
-
     <!-- 連播圖 -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://images.unsplash.com/photo-1581978392302-136a082482e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="d-block w-50" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2312&q=80"
+                    class="d-block w-100" alt="貓咪">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>給你口感獨特吃來爽口的好滋味</h3>
+                </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://images.unsplash.com/photo-1580650571791-ac06a41c3939?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="d-block w-50" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1574085733277-851d9d856a3a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80"
+                    class="d-block w-100" alt="咖啡">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>新鮮天然原料讓你神清氣爽</h3>
+                </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://images.unsplash.com/photo-1578765449897-9e97d595259a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="d-block w-50" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1578765449897-9e97d595259a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                    class="d-block w-100" alt="環境">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>經典獨家手工製法 世界僅此一家</h3>
+                </div>
             </div>
-          </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
         </a>
-      </div>
+
+    </div>
 
     <!-- 最新消息 -->
     <div id="new-box">
@@ -198,180 +188,246 @@
                     <p>生日快樂</p>
 
                     <div id="cake1_price" class="price-size">$100</div>
-                    <button type="button" id="cake_1_add" class="btn">+</button>
-                    <span id="cake1Amount" class="amount-size">0</span>
-                    <button type="button" id="cake_1_sub" class="btn">-</button>
-
+                    <div class="number-input">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                            id="cake1_amount_add"></button>
+                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="cake1_amount">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"
+                            id="cake1_amount_sub"></button>
+                    </div>
                 </div>
                 <div class="cake">
                     <img id="cake2Img" class="c1" src="https://i.ibb.co/NL2mkqy/3.png" alt="生日蛋糕">
                     <p>酸甜生活</p>
 
                     <div class="price-size" id="cake2_price">$150 </div>
-                    <button type="button" id="cake_2_add" class="btn">+</button>
-                    <span class="amount-size" id="cake2Amount">0</span>
-                    <button type="button" id="cake_2_sub" class="btn">-</button>
+                    <div class="number-input">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                            id="cake2_amount_sub"></button>
+                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="cake2_amount">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"
+                            id="cake2_amount_add"></button>
 
+                    </div>
                 </div>
                 <div class="cake">
                     <img class="c1" src="https://i.ibb.co/tqyvRCq/2.png" alt="生日蛋糕">
                     <p>生日瀑布</p>
 
                     <div class="price-size" id="cake3_price">$200 </div>
-                    <button type="button" id="cake_3_add" class="btn">+</button>
-                    <span class="amount-size" id="cake3Amount">0</span>
-                    <button type="button" id="cake_3_sub" class="btn">-</button>
-
-
+                    <div class="number-input">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                            id="cake3_amount_sub"></button>
+                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="cake3_amount">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"
+                            id="cake3_amount_add"></button>
+                    </div>
                 </div>
                 <div class="cake">
                     <img class="c1" src="https://i.ibb.co/jgCtdCK/4.png" alt="生日蛋糕">
                     <p>媽媽的愛</p>
 
                     <div class="price-size" id="cake4_price">$250 </div>
-                    <button type="button" id="cake_4_add" class="btn">+</button>
-                    <span class="amount-size" id="cake4Amount">0</span>
-                    <button type="button" id="cake_4_sub" class="btn">-</button>
-
+                    <div class="number-input">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                            id="cake4_amount_sub"></button>
+                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="cake4_amount">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"
+                            id="cake4_amount_add"></button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!--  美味麵包內容 -->
-        <div id="bread">
-            <div class="fake-nav"></div>
-            <div class="cake-title">
-                <h1>美味麵包</h1>
-            </div>
-            <div id="d-cake" class="icon-inner">
-                <div class="cake">
-                    <img src="https://i.ibb.co/Z2TqQYy/3.png" alt="美味麵包" class="c2">
-                    <p>糖雪風暴</p>
-
-                    <div id="cake5_price" class="price-size">$100</div>
-                    <button type="button" id="cake_5_add" class="btn">+</button>
-                    <span id="cake5Amount" class="amount-size">0</span>
-                    <button type="button" id="cake_5_sub" class="btn">-</button>
+            <!--  美味麵包內容 -->
+            <div id="bread">
+                <div class="fake-nav"></div>
+                <div class="cake-title">
+                    <h1>美味麵包</h1>
                 </div>
+                <div id="d-cake" class="icon-inner">
+                    <div class="cake">
+                        <img src="https://i.ibb.co/Z2TqQYy/3.png" alt="美味麵包" class="c2">
+                        <p>糖雪風暴</p>
 
-                <div class="cake">
-                    <img src="https://i.ibb.co/y0xSyJ8/4.png" alt="美味麵包" class="c2">
-                    <p>粗糧生活</p>
+                        <div id="cake5_price" class="price-size">$100</div>
+                        <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                id="yummyCake1_amount_sub"></button>
+                            <input class="quantity" min="0" name="quantity" value="0" type="number"
+                                id="ayummyCake1_amount">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"
+                                id="yummyCake1_amount_add"></button>
+                        </div>
+                    </div>
+                    <div class="cake">
+                        <img src="https://i.ibb.co/y0xSyJ8/4.png" alt="美味麵包" class="c2">
+                        <p>粗糧生活</p>
 
-                    <div id="cake6_price" class="price-size">$100</div>
-                    <button type="button" id="cake_6_add" class="btn">+</button>
-                    <span id="cake6Amount" class="amount-size">0</span>
-                    <button type="button" id="cake_6_sub" class="btn">-</button>
-                </div>
+                        <div id="cake6_price" class="price-size">$100</div>
+                        <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                id="yummyCake2_amount_sub"></button>
+                            <input class="quantity" min="0" name="quantity" value="0" type="number"
+                                id="yummyCake2_amount">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"
+                                id="yummyCake2_amount_add"></button>
+                        </div>
+                    </div>
+                    <div class="cake">
+                        <img src="https://i.ibb.co/qD85bvd/1.png" alt="美味麵包" class="c2">
+                        <p>記得配醬</p>
 
-                <div class="cake">
-                    <img src="https://i.ibb.co/qD85bvd/1.png" alt="美味麵包" class="c2">
-                    <p>記得配醬</p>
+                        <div id="cake7_price" class="price-size">$100</div>
+                        <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                id="yummyCake3_amount_sub"></button>
+                            <input class="quantity" min="0" name="quantity" value="0" type="number"
+                                id="yummyCake3_amount">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"
+                                id="yummyCake3_amount_add"></button>
+                        </div>
+                    </div>
+                    <div class="cake">
+                        <img class="c2" src="https://i.ibb.co/TgmdxcN/2.png" alt="美味麵包" class="c2">
+                        <p>你愛的麵包</p>
 
-                    <div id="cake7_price" class="price-size">$100</div>
-                    <button type="button" id="cake_7_add" class="btn">+</button>
-                    <span id="cake7Amount" class="amount-size">0</span>
-                    <button type="button" id="cake_7_sub" class="btn">-</button>
-                </div>
-                <div class="cake">
-                    <img class="c2" src="https://i.ibb.co/TgmdxcN/2.png" alt="美味麵包" class="c2">
-                    <p>你愛的麵包</p>
-
-                    <div id="cake8_price" class="price-size">$100</div>
-                    <button type="button" id="cake_8_add" class="btn">+</button>
-                    <span id="cake8Amount" class="amount-size">0</span>
-                    <button type="button" id="cake_8_sub" class="btn">-</button>
-                </div>
-            </div>
-        </div>
-
-        <!--喜餅禮盒內容 -->
-        <div id="marriage">
-            <div class="fake-nav"></div>
-            <div class="cake-title">
-                <h1>喜餅禮盒</h1>
-            </div>
-            <div id="w-box" class="icon-inner">
-                <div class="cake">
-                    <img src="https://i.ibb.co/N1C9RSW/f90615d826fd859f9deedfeca76478d2.jpg" alt="喜餅禮盒" class="c3">
-                    <p>我們結婚了</p>
-
-                    <div id="cake9_price" class="price-size">$100</div>
-                    <button type="button" id="cake_9_add" class="btn">+</button>
-                    <span id="cake9Amount" class="amount-size">0</span>
-                    <button type="button" id="cake_9_sub" class="btn">-</button>
-                </div>
-                <div class="cake">
-                    <img src="https://i.ibb.co/HYy7DpD/1ecc4618acc52f99f7b412fbd7e2ef38.jpg" alt="喜餅禮盒" class="c3">
-                    <p>情深不知幾何</p>
-
-                    <div id="cake10_price" class="price-size">$100</div>
-                    <button type="button" id="cake_10_add" class="btn">+</button>
-                    <span id="cake10Amount" class="amount-size">0</span>
-                    <button type="button" id="cake_10_sub" class="btn">-</button>
-                </div>
-                <div class="cake">
-                    <img src="https://i.ibb.co/p02QVh1/49c00255c178f427fd972793aa595c91.jpg" alt="喜餅禮盒" class="c3">
-                    <p>藍色和你</p>
-
-                    <div id="cake11_price" class="price-size">$100</div>
-                    <button type="button" id="cake_11_add" class="btn">+</button>
-                    <span id="cake11Amount" class="amount-size">0</span>
-                    <button type="button" id="cake_11_sub" class="btn">-</button>
-                </div>
-                <div class="cake">
-                    <img src="https://i.ibb.co/YhF7sN0/01d958effb0eb6ab46b330a9262d48fe.jpg" alt="喜餅禮盒" class="c3">
-                    <p>心心相映</p>
-
-                    <div id="cake12_price" class="price-size">$100</div>
-                    <button type="button" id="cake_12_add" class="btn">+</button>
-                    <span id="cake12Amount" class="amount-size">0</span>
-                    <button type="button" id="cake_12_sub" class="btn">-</button>
+                        <div id="cake8_price" class="price-size">$100</div>
+                        <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                id="yummyCake4amount_sub"></button>
+                            <input class="quantity" min="0" name="quantity" value="0" type="number"
+                                id="yummyCake4_amount">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"
+                                id="yummyCake4_amount_add"></button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- 彌月蛋糕內容 -->
-        <div id="baby">
-            <div class="fake-nav"></div>
-            <div class="cake-title">
-                <h1>彌月蛋糕</h1>
+            <!--喜餅禮盒內容 -->
+            <div id="marriage">
+                <div class="fake-nav"></div>
+                <div class="cake-title">
+                    <h1>喜餅禮盒</h1>
+                </div>
+                <div id="w-box" class="icon-inner">
+                    <div class="cake">
+                        <img src="https://i.ibb.co/N1C9RSW/f90615d826fd859f9deedfeca76478d2.jpg" alt="喜餅禮盒" class="c3">
+                        <p>我們結婚了</p>
+
+                        <div id="cake9_price" class="price-size">$100</div>
+                        <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                id="giFitBox1_amount_sub"></button>
+                            <input class="quantity" min="0" name="quantity" value="0" type="number"
+                                id="giFitBox1_amount">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"
+                                id="giFitBox1_amount_add"></button>
+                        </div>
+                    </div>
+                    <div class="cake">
+                        <img src="https://i.ibb.co/HYy7DpD/1ecc4618acc52f99f7b412fbd7e2ef38.jpg" alt="喜餅禮盒" class="c3">
+                        <p>情深不知幾何</p>
+
+                        <div id="cake10_price" class="price-size">$100</div>
+                        <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                id="giFitBox2_amount_sub"></button>
+                            <input class="quantity" min="0" name="quantity" value="0" type="number"
+                                id="giFitBox2_amount">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"
+                                id="giFitBox2_amount_add"></button>
+                        </div>
+                    </div>
+                    <div class="cake">
+                        <img src="https://i.ibb.co/p02QVh1/49c00255c178f427fd972793aa595c91.jpg" alt="喜餅禮盒" class="c3">
+                        <p>藍色和你</p>
+
+                        <div id="cake11_price" class="price-size">$100</div>
+                        <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                id="giFitBox3_amount_sub"></button>
+                            <input class="quantity" min="0" name="quantity" value="0" type="number"
+                                id="giFitBox3_amount">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"
+                                id="giFitBox3_amount_add"></button>
+                        </div>
+                    </div>
+                    <div class="cake">
+                        <img src="https://i.ibb.co/YhF7sN0/01d958effb0eb6ab46b330a9262d48fe.jpg" alt="喜餅禮盒" class="c3">
+                        <p>心心相映</p>
+
+                        <div id="cake12_price" class="price-size">$100</div>
+                        <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                id="giFitBox4_amount_sub"></button>
+                            <input class="quantity" min="0" name="quantity" value="0" type="number"
+                                id="giFitBox4_amount">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"
+                                id="giFitBox4_amount_add"></button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="m-cake" class="icon-inner">
-                <div class="cake">
-                    <img src="./img/baby1.png" alt="彌月蛋糕" class="c4">
-                    <p>我們結婚了</p>
 
-                    <div id="cake13_price" class="price-size">$100</div>
-                    <button type="button" id="cake_13_add" class="btn">+</button>
-                    <span id="cake13Amount" class="amount-size">0</span>
-                    <button type="button" id="cake_13_sub" class="btn">-</button>
+            <!-- 彌月蛋糕內容 -->
+            <div id="baby">
+                <div class="fake-nav"></div>
+                <div class="cake-title">
+                    <h1>彌月蛋糕</h1>
                 </div>
-                <div class="cake">
-                    <img src="./img/baby2.png" alt="彌月蛋糕" class="c4">
-                    <p>情深不知幾何</p>
+                <div id="m-cake" class="icon-inner">
+                    <div class="cake">
+                        <img src="./img/baby1.png" alt="彌月蛋糕" class="c4">
+                        <p>我們結婚了</p>
 
-                    <div id="cake14_price" class="price-size">$100</div>
-                    <button type="button" id="cake_14_add" class="btn">+</button>
-                    <span id="cake14Amount" class="amount-size">0</span>
-                    <button type="button" id="cake_14_sub" class="btn">-</button>
-                </div>
-                <div class="cake">
-                    <img src="./img/baby3.png" alt="彌月蛋糕" class="c4">
-                    <p>藍色和你</p>
+                        <div id="cake13_price" class="price-size">$100</div>
+                        <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                id="cake13_amount_sub"></button>
+                            <input class="quantity" min="0" name="quantity" value="0" type="number" id="cake13_amount">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"
+                                id="cake13_amount_add"></button>
+                        </div>
+                    </div>
+                    <div class="cake">
+                        <img src="./img/baby2.png" alt="彌月蛋糕" class="c4">
+                        <p>情深不知幾何</p>
 
-                    <div id="cake15_price" class="price-size">$100</div>
-                    <button type="button" id="cake_15_add" class="btn">+</button>
-                    <span id="cake15mount" class="amount-size">0</span>
-                    <button type="button" id="cake_15_sub" class="btn">-</button>
+                        <div id="cake14_price" class="price-size">$100</div>
+                        <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                id="cake14_amount_sub"></button>
+                            <input class="quantity" min="0" name="quantity" value="0" type="number" id="cake14_amount">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"
+                                id="cake14_amount_add"></button>
+                        </div>
+                    </div>
+                    <div class="cake">
+                        <img src="./img/baby3.png" alt="彌月蛋糕" class="c4">
+                        <p>藍色和你</p>
+
+                        <div id="cake15_price" class="price-size">$100</div>
+                        <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                id="cake15_amount_sub"></button>
+                            <input class="quantity" min="0" name="quantity" value="0" type="number" id="cake15_amount">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"
+                                id="cake15_amount_add"></button>
+                        </div>
+                    </div>
                 </div>
                 <div class="cake">
                     <img src="./img/baby4.png" alt="彌月蛋糕" class="c4">
                     <p>心心相映</p>
 
                     <div id="cake16_price" class="price-size">$100</div>
-                    <button type="button" id="cake_16_add" class="btn">+</button>
-                    <span id="cake16Amount" class="amount-size">0</span>
-                    <button type="button" id="cake_16_sub" class="btn">-</button>
+                    <div class="number-input">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                            id="cake16_amount_sub"></button>
+                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="cake16_amount">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"
+                            id="cake16_amount_add"></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -387,37 +443,53 @@
                     <img src="./img/snake1.jpg" alt="點心餐盒" class="c5">
                     <p>我們結婚了</p>
 
-                    <div id="cake1_price" class="price-size">$100</div>
-                    <button type="button" id="cake_1_add" class="btn">+</button>
-                    <span id="cake1Amount" class="amount-size">0</span>
-                    <button type="button" id="cake_1_sub" class="btn">-</button>
+                    <div id="cake17_price" class="price-size">$100</div>
+                    <div class="number-input">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                            id="cake17_amount_sub"></button>
+                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="cake17_amount">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"
+                            id="cake17_amount_add"></button>
+                    </div>
                 </div>
                 <div class="cake">
                     <img src="./img/snake2.jpg" alt="點心餐盒" class="c5">
                     <p>情深不知幾何</p>
 
-                    <div id="cake1_price" class="price-size">$100</div>
-                    <button type="button" id="cake_1_add" class="btn">+</button>
-                    <span id="cake1Amount" class="amount-size">0</span>
-                    <button type="button" id="cake_1_sub" class="btn">-</button>
+                    <div id="cake18_price" class="price-size">$100</div>
+                    <div class="number-input">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                            id="cake18_amount_sub"></button>
+                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="cake18_amount">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"
+                            id="cake18_amount_add"></button>
+                    </div>
                 </div>
                 <div class="cake">
                     <img src="./img/snake3.jpg" alt="點心餐盒" class="c5">
                     <p>藍色和你</p>
 
-                    <div id="cake1_price" class="price-size">$100</div>
-                    <button type="button" id="cake_1_add" class="btn">+</button>
-                    <span id="cake1Amount" class="amount-size">0</span>
-                    <button type="button" id="cake_1_sub" class="btn">-</button>
+                    <div id="cake19_price" class="price-size">$100</div>
+                    <div class="number-input">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                            id="cake19_amount_sub"></button>
+                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="cake19_amount">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"
+                            id="cake19_amount_add"></button>
+                    </div>
                 </div>
                 <div class="cake">
                     <img src="./img/snake4.jpg" alt="點心餐盒" class="c5">
-                    <p>心心相映</p>
+                    <p>藍色和你</p>
 
-                    <div id="cake1_price" class="price-size">$100</div>
-                    <button type="button" id="cake_1_add" class="btn">+</button>
-                    <span id="cake1Amount" class="amount-size">0</span>
-                    <button type="button" id="cake_1_sub" class="btn">-</button>
+                    <div id="cake20_price" class="price-size">$100</div>
+                    <div class="number-input">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                            id="cake20_amount_sub"></button>
+                        <input class="quantity" min="0" name="quantity" value="0" type="number" id="cake20_amount">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"
+                            id="cake20_amount_add"></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -425,7 +497,6 @@
 
 
     <!--  聯絡方式 -->
-    <!-- <hr> -->
     <div id="contract">
         <H1>聯絡方式</H1>
         <section>電話:03-1234567</section>

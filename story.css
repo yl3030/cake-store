@@ -22,6 +22,19 @@ nav {
 	z-index: 1;
 }
 
+#nav-arrange {
+	display: grid;
+	grid-template-columns: 5% 90% 5%;
+}
+
+#title {
+	text-align: center;
+}
+
+nav ol {
+	display: inline-block;
+}
+
 nav ol li {
 	display: inline-block;
 	padding: 0 20px;
@@ -36,6 +49,33 @@ nav ol li a {
 
 nav ol li a:hover {
 	color: #e6b800;
+	text-decoration: none;
+}
+
+/* ＬＯＧＯ */
+#logo {
+	font-family: "Noto Serif TC", serif;
+	font-size: 30px;
+	font-weight: 900;
+	display: inline-block;
+	/* background-color: yellow; */
+}
+
+#logo img {
+	width: 80px;
+	margin-right: 10px;
+}
+
+/* 購物車 */
+#car {
+	display: inline-block;
+	font-family: "Noto Serif TC", serif;
+	font-size: 30px;
+	font-weight: 900;
+	border-radius: 5px;
+	background-color: #e6b800;
+	height: 45px;
+	right: 0;
 }
 
 /* menu */
@@ -95,46 +135,10 @@ nav ol li a:hover {
 	border-radius: 50px;
 }
 
-/* ＬＯＧＯ */
-#logo img {
-	width: 80px;
-	margin-right: 10px;
-	padding: 3px 3px 3px 6px;
-}
-
-#logo {
-	font-family: "Noto Serif TC", serif;
-	font-size: 30px;
-	font-weight: 900;
-}
-
-#car {
-	font-family: "Noto Serif TC", serif;
-	font-size: 30px;
-	font-weight: 900;
-	border-radius: 5px;
-	background-color: #e6b800;
-	padding: 8px 20px;
-	height: 50px;
-	color: white;
-}
-
-/* 連播圖 */
-#banner {
-	height: 100vh;
-	background-image: url(https://images.unsplash.com/photo-1560180474-e8563fd75bab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);
-	background-size: cover;
-	margin-top: -100px;
-	transform: rotate(1);
-	transition: 3s;
-}
-
-#banner:hover {
-	transform: scale(1.15);
-}
-
-#banner-box {
-	overflow: hidden;
+/* 輪播圖 */
+.carousel-item img {
+    height:500px ;
+    object-fit: cover;
 }
 
 /* 品牌故事 */
