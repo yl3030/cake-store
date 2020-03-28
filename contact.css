@@ -190,18 +190,12 @@ label {
 
 
 
-/* 聯絡方式 */
-
-#contract {
-	padding: 40px 0 0 0;
-	text-align: center;
-}
-
 /* ＦＯＯＴＥＲ */
 footer {
 	margin: 30px auto 0px;
-	height: 100px;
-	line-height: 100px;
+	height: 200px;
+	padding: 40px 0;
+	/* line-height: 100px; */
 	background-color: #e6b800;
 	color: white;
 	text-align: center;

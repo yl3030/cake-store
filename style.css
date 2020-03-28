@@ -253,13 +253,13 @@ nav ol li a:hover {
 }
 
 .icon-pic a img {
-	width: 100px;
+	width: 120px;
+	padding: 10px;
 }
 
 .icon-pic a img:hover {
-	border: 3px solid #e6b800;
 	border-radius: 10px;
-	padding: 5px;
+	background-color: #f5f5f5;
 }
 
 /* ICON內容 */
@@ -398,13 +398,6 @@ nav ol li a:hover {
 	font-weight: bold;
 	text-align: center;
   }
-
-/* 聯絡方式 */
-
-#contract {
-	padding: 40px 0 0 0;
-	text-align: center;
-}
 
 /* ＦＯＯＴＥＲ */
 footer {

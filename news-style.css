@@ -230,8 +230,9 @@ nav ol li a:hover {
 /* ＦＯＯＴＥＲ */
 footer {
 	margin: 30px auto 0px;
-	height: 100px;
-	line-height: 100px;
+	height: 200px;
+	padding: 40px 0;
+	/* line-height: 100px; */
 	background-color: #e6b800;
 	color: white;
 	text-align: center;
