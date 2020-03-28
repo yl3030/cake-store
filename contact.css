@@ -76,7 +76,14 @@ nav ol li a:hover {
 /* menu */
 #menu {
 	display: none;
+	position: fixed;
+	right: 0;
+	top: 0;
+	padding: 10px;
+	cursor: pointer;
+	z-index: 1;
 }
+
 
 #menu img {
 	width: 80px;
@@ -84,9 +91,7 @@ nav ol li a:hover {
 	position: fixed;
 	top: 0;
 	right: 0;
-	z-index: 1;
 	cursor: pointer;
-	/* background-color: #fff; */
 }
 
 #menu:active #menu-box {
@@ -97,37 +102,40 @@ nav ol li a:hover {
 	right: 0;
 }
 
-#menu-box {
-	background-color: #fff;
+#menu #menu-box {
+	position: absolute;
+	right: -400px;
+	top: 0;
 	width: 400px;
 	height: 100vh;
-	position: absolute;
-	/* top: 0; */
-	/* right: 400px; */
-	display: none;
-	z-index: 2;
-	padding: 20px;
+	background-color: #fff;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
 	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
 }
 
-#menu-box ul li {
+#menu #menu-box ul {
 	list-style: none;
-	font-size: 36px;
-	text-decoration: none;
-	padding: 20px;
 }
 
-#menu-box ul li a {
-	text-decoration: none;
-	color: #000;
+#menu #menu-box ul li {
+	padding: 30px;
 }
 
-#list-box {
+#menu #menu-box ul li a {
+	color: #707070;
+	text-decoration: none;
+	font-size:24px;
+}
+
+#link {
 	background-color: #e6b800;
-	color: #fff;
-	padding: 10px;
+	display: inline-block;
+	width: 80%;
+	padding: 10px 20px;
+	border-radius: 30px;
 	text-align: center;
-	border-radius: 50px;
+	color: #fff !important;
 }
 
 /* 輪播圖 */
