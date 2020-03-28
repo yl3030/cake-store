@@ -6,7 +6,7 @@
 }
 
 /* 導覽列 */
-nav{
+nav {
 	display: flex;
 	justify-content: space-between;
 	padding: 15px 20px;
@@ -85,7 +85,6 @@ nav ol li a:hover {
 	z-index: 1;
 }
 
-
 #menu img {
 	width: 80px;
 	padding: 20px;
@@ -126,7 +125,7 @@ nav ol li a:hover {
 #menu #menu-box ul li a {
 	color: #707070;
 	text-decoration: none;
-	font-size:24px;
+	font-size: 24px;
 }
 
 #home {
@@ -141,8 +140,8 @@ nav ol li a:hover {
 
 /* 輪播圖 */
 .carousel-item img {
-    height:500px ;
-    object-fit: cover;
+	height: 500px;
+	object-fit: cover;
 }
 
 /* --------------------------- */
@@ -192,10 +191,6 @@ nav ol li a:hover {
 .new-img img {
 	height: 130px;
 	width: 350px;
-}
-
-.more {
-	/* background-color: lightblue; */
 }
 
 .more a {
@@ -336,31 +331,30 @@ nav ol li a:hover {
 
 .quantity {
 	width: 55px;
-	
-  }
-  input[type="number"] {
+}
+input[type="number"] {
 	-webkit-appearance: textfield;
 	-moz-appearance: textfield;
 	appearance: textfield;
-  }
-  
-  input[type=number]::-webkit-inner-spin-button,
-  input[type=number]::-webkit-outer-spin-button {
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
 	-webkit-appearance: none;
-  }
-  
-  .number-input {
+}
+
+.number-input {
 	border: 2px solid #ddd;
 	display: inline-flex;
-  }
-  
-  .number-input,
-  .number-input * {
+}
+
+.number-input,
+.number-input * {
 	box-sizing: border-box;
-  }
-  
-  .number-input button {
-	outline:none;
+}
+
+.number-input button {
+	outline: none;
 	-webkit-appearance: none;
 	background-color: transparent;
 	border: none;
@@ -371,23 +365,23 @@ nav ol li a:hover {
 	cursor: pointer;
 	margin: 0;
 	position: relative;
-  }
-  
-  .number-input button:before,
-  .number-input button:after {
+}
+
+.number-input button:before,
+.number-input button:after {
 	display: inline-block;
 	position: absolute;
-	content: '';
+	content: "";
 	width: 10px;
 	height: 2px;
 	background-color: #212121;
 	transform: translate(-50%, -50%);
-  }
-  .number-input button.plus:after {
+}
+.number-input button.plus:after {
 	transform: translate(-50%, -50%) rotate(90deg);
-  }
-  
-  .number-input input[type=number] {
+}
+
+.number-input input[type="number"] {
 	font-family: sans-serif;
 	max-width: 50px;
 	padding: 1px;
@@ -397,7 +391,25 @@ nav ol li a:hover {
 	height: 30px;
 	font-weight: bold;
 	text-align: center;
-  }
+}
+
+/* 結帳 */
+#check {
+	background-color: #e6b800;
+	padding: 10px 15px;
+	text-align: center;
+	margin: 50px auto 100px;
+	width: 120px;
+	font-size: 18px;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	/* box-shadow: 1px 1px 3px rgba(0,0,0,0.3); */
+}
+
+#check:hover{
+	background-color: #e9c225;
+}
 
 /* ＦＯＯＴＥＲ */
 footer {
@@ -429,7 +441,7 @@ footer {
 	}
 
 	/* 導覽列 */
-	nav{
+	nav {
 		display: none;
 	}
 	/* 最新消息 */
@@ -483,7 +495,7 @@ footer {
 	}
 
 	/* 導覽列 */
-	nav{
+	nav {
 		display: none;
 	}
 
