@@ -133,7 +133,7 @@ nav ol li a:hover {
 	font-size:24px;
 }
 
-#news {
+#news-page {
 	background-color: #e6b800;
 	display: inline-block;
 	width: 80%;
@@ -165,9 +165,18 @@ nav ol li a:hover {
 	padding-left: 100px;
 }
 
-#content #discount {
+#discount {
 	font-weight: bold;
 	color: #e6b800;
+	padding: 5px;
+}
+
+#active{
+	padding: 5px;
+}
+
+#active:hover{
+	background-color: #f5f5f5;
 }
 #content h1 {
 	padding: 10px 0;
