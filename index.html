@@ -15,7 +15,7 @@
 
 <body>
     <!-- 導覽列 -->
-    <nav id="nb">
+    <nav>
         <div id="nav-arrange">
             <div id="logo"><a href="index.html"><img src="https://i.ibb.co/Ms769NF/logo-black.jpg"
                         alt="烘焙坊-Yulita-LOGO"></a></div>
@@ -41,11 +41,11 @@
         <img src="https://i.ibb.co/HDJZqTg/menu.png" alt="menu">
         <div id="menu-box">
             <ul>
-                <li><a href="#" class="current">首頁</a></li>
-                <li><a href="#">品牌故事</a></li>
-                <li><a href="#">最新消息</a></li>
-                <li><a href="#">聯絡我們</a></li>
-                <li><a href="#">購物車</a></li>
+                <li><a href="index.html" id="home">首頁</a></li>
+                <li><a href="story.html" id="story">品牌故事</a></li>
+                <li><a href="news.html" id="news">最新消息</a></li>
+                <li><a href="contact.html" id="link">聯絡我們</a></li>
+                <li><a href="#" id="shop">購物車</a></li>
             </ul>
         </div>
     </div>
@@ -94,7 +94,7 @@
             </div>
             <div class="new-img">
                 <a href="#">
-                    <img src="https://images.unsplash.com/photo-1519340333755-56e9c1d04579?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+                    <img src="./img/active-news.jpg"
                         alt="NEWS">
                 </a>
             </div>
@@ -108,7 +108,7 @@
             </div>
             <div class="new-img">
                 <a href="#">
-                    <img src="https://images.unsplash.com/photo-1545731784-30ac82e98621?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80"
+                    <img src="./img/discount-news.jpg"
                         alt="COST" alt="COST">
                 </a>
             </div>
@@ -378,7 +378,7 @@
                 <div id="m-cake" class="icon-inner">
                     <div class="cake">
                         <img src="./img/baby1.png" alt="彌月蛋糕" class="c4">
-                        <p>我們結婚了</p>
+                        <p>熊麻吉</p>
 
                         <div id="cake13_price" class="price-size">$100</div>
                         <div class="number-input">
@@ -391,7 +391,7 @@
                     </div>
                     <div class="cake">
                         <img src="./img/baby2.png" alt="彌月蛋糕" class="c4">
-                        <p>情深不知幾何</p>
+                        <p>熊寶貝</p>
 
                         <div id="cake14_price" class="price-size">$100</div>
                         <div class="number-input">
@@ -404,7 +404,7 @@
                     </div>
                     <div class="cake">
                         <img src="./img/baby3.png" alt="彌月蛋糕" class="c4">
-                        <p>藍色和你</p>
+                        <p>堂構增輝</p>
 
                         <div id="cake15_price" class="price-size">$100</div>
                         <div class="number-input">
@@ -417,7 +417,7 @@
                     </div>
                     <div class="cake">
                         <img src="./img/baby4.png" alt="彌月蛋糕" class="c4">
-                        <p>心心相映</p>
+                        <p>天賜麟兒</p>
 
                         <div id="cake16_price" class="price-size">$100</div>
                         <div class="number-input">
@@ -440,7 +440,7 @@
                 <div id="s-box" class="icon-inner">
                     <div class="cake">
                         <img src="./img/snake1.jpg" alt="點心餐盒" class="c5">
-                        <p>我們結婚了</p>
+                        <p>夢幻甜甜圈</p>
 
                         <div id="cake17_price" class="price-size">$100</div>
                         <div class="number-input">
@@ -453,7 +453,7 @@
                     </div>
                     <div class="cake">
                         <img src="./img/snake2.jpg" alt="點心餐盒" class="c5">
-                        <p>情深不知幾何</p>
+                        <p>豔紅之瑰</p>
 
                         <div id="cake18_price" class="price-size">$100</div>
                         <div class="number-input">
@@ -466,7 +466,7 @@
                     </div>
                     <div class="cake">
                         <img src="./img/snake3.jpg" alt="點心餐盒" class="c5">
-                        <p>藍色和你</p>
+                        <p>紫色漩渦</p>
 
                         <div id="cake19_price" class="price-size">$100</div>
                         <div class="number-input">
@@ -479,7 +479,7 @@
                     </div>
                     <div class="cake">
                         <img src="./img/snake4.jpg" alt="點心餐盒" class="c5">
-                        <p>藍色和你</p>
+                        <p>海洋之心</p>
 
                         <div id="cake20_price" class="price-size">$100</div>
                         <div class="number-input">
@@ -522,9 +522,10 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-        <!-- jQuery CDN -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="./shopping.js"></script>
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+    <script src="./shopping.js"></script>
 
 
 </body>

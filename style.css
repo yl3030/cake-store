@@ -6,7 +6,7 @@
 }
 
 /* 導覽列 */
-#nb {
+nav{
 	display: flex;
 	justify-content: space-between;
 	padding: 15px 20px;
@@ -85,15 +85,6 @@ nav ol li a:hover {
 	z-index: 1;
 }
 
-#menu a.current {
-	background-color: #e6b800;
-	display: inline-block;
-	width: 80%;
-	padding: 10px 20px;
-	border-radius: 30px;
-	text-align: center;
-	color: #fff !important;
-}
 
 #menu img {
 	width: 80px;
@@ -135,15 +126,17 @@ nav ol li a:hover {
 #menu #menu-box ul li a {
 	color: #707070;
 	text-decoration: none;
-	font-size: 36px;
+	font-size:24px;
 }
 
-#list-box {
+#home {
 	background-color: #e6b800;
-	color: #fff;
-	padding: 10px;
+	display: inline-block;
+	width: 80%;
+	padding: 10px 20px;
+	border-radius: 30px;
 	text-align: center;
-	border-radius: 50px;
+	color: #fff !important;
 }
 
 /* 輪播圖 */
@@ -170,9 +163,11 @@ nav ol li a:hover {
 #discount {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	/* grid-gap: 10px; */
 	/* background:#e6b800; */
-	padding: 10px 50px;
+	padding: 10px 30px;
 	border-radius: 5px;
+	justify-items: center;
 }
 
 .content {
@@ -196,11 +191,11 @@ nav ol li a:hover {
 
 .new-img img {
 	height: 130px;
+	width: 350px;
 }
 
 .more {
 	/* background-color: lightblue; */
-	text-align: right;
 }
 
 .more a {
@@ -440,7 +435,7 @@ footer {
 	}
 
 	/* 導覽列 */
-	#nb {
+	nav{
 		display: none;
 	}
 	/* 最新消息 */
@@ -494,7 +489,7 @@ footer {
 	}
 
 	/* 導覽列 */
-	#nb {
+	nav{
 		display: none;
 	}
 
