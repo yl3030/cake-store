@@ -58,6 +58,34 @@ var commodity = {
         "amount":0,
         "price":250,
    }
+  },"mothCake":{
+      "cake13":{
+        "amount":0,
+        "price":100,
+      },"cake14":{
+        "amount":0,
+        "price":150,
+      },"cake15":{
+        "amount":0,
+        "price":200,
+      },"cake16":{
+        "amount":0,
+        "price":250,
+   }
+},"dessert":{
+      "cake13":{
+        "amount":0,
+        "price":100,
+      },"cake14":{
+        "amount":0,
+        "price":150,
+      },"cake15":{
+        "amount":0,
+        "price":200,
+      },"cake16":{
+        "amount":0,
+        "price":250,
+   }
 },
    
 }
@@ -315,6 +343,202 @@ $("#giFitBox4_amount_add").click(function(){
   let localPrice = price * amount;
   commodity.giFitBox.giFitBox4.amount = parseInt(amount);
   sumPrice();
+})
+
+$("#cake13_amount_add").click(function(){
+  let cake13_amount=$("#cake13_amount").val();
+  console.log(cake13_amount);
+  let price =  commodity.mothCake.cake13.price;
+  let amount = cake13_amount;
+  let localPrice = price * amount;
+  commodity.mothCake.cake13.amount = amount;
+ 
+  sumPrice();
+  
+})
+
+$("#cake13_amount_sub").click(function(){
+  let cake13_amount=$("#cake13_amount").val();
+  console.log(cake13_amount);
+  let price =  commodity.birthCake.cake1.price;
+  let amount = cake13_amount;
+  let localPrice = price * amount;
+  commodity.birthCake.cake1.amount = amount;
+ 
+  sumPrice();
+  
+})
+
+$("#cake14_amount_add").click(function(){
+  let cake14_amount=$("#cake14_amount").val();
+  console.log(cake14_amount);
+  let price =  commodity.mothCake.cake14.price;
+  let amount = cake14_amount;
+  let localPrice = price * amount;
+  commodity.mothCake.cake14.amount = amount;
+ 
+  sumPrice();
+  
+})
+
+$("#cake14_amount_sub").click(function(){
+  let cake14_amount=$("#cake14_amount").val();
+  console.log(cake14_amount);
+  let price =  commodity.mothCake.cake14.price;
+  let amount = cake14_amount;
+  let localPrice = price * amount;
+  commodity.mothCake.cake14.amount = amount;
+ 
+  sumPrice();
+  
+})
+
+
+$("#cake15_amount_add").click(function(){
+  let cake14_amount=$("#cake15_amount").val();
+  console.log(cake14_amount);
+  let price =  commodity.mothCake.cake15.price;
+  let amount = cake14_amount;
+  let localPrice = price * amount;
+  commodity.mothCake.cake15.amount = amount;
+ 
+  sumPrice();
+  
+})
+
+$("#cake15_amount_sub").click(function(){
+  let cake14_amount=$("#cake15_amount").val();
+  console.log(cake14_amount);
+  let price =  commodity.mothCake.cake15.price;
+  let amount = cake14_amount;
+  let localPrice = price * amount;
+  commodity.mothCake.cake15.amount = amount;
+ 
+  sumPrice();
+  
+})
+
+
+$("#cake16_amount_add").click(function(){
+  let cake15_amount=$("#cake16_amount").val();
+  console.log(cake15_amount);
+  let price =  commodity.mothCake.cake16.price;
+  let amount = cake15_amount;
+  let localPrice = price * amount;
+  commodity.mothCake.cake16.amount = amount;
+ 
+  sumPrice();
+  
+})
+
+$("#cake16_amount_sub").click(function(){
+  let cake15_amount=$("#cake16_amount").val();
+  console.log(cake15_amount);
+  let price =  commodity.mothCake.cake16.price;
+  let amount = cake15_amount;
+  let localPrice = price * amount;
+  commodity.mothCake.cake16.amount = amount;
+ 
+  sumPrice();
+  
+})
+
+
+$("#dessert1_amount_add").click(function(){
+  let cake13_amount=$("#dessert1_amount").val();
+  console.log(cake13_amount);
+  let price =  commodity.mothCake.cake13.price;
+  let amount = cake13_amount;
+  let localPrice = price * amount;
+  commodity.dessert.cake13.amount = amount;
+ 
+  sumPrice();
+  
+})
+
+$("#dessert1_amount_sub").click(function(){
+  let cake13_amount=$("#dessert1_amount").val();
+  console.log(cake13_amount);
+  let price =  commodity.dessert.cake13.price;
+  let amount = cake13_amount;
+  let localPrice = price * amount;
+  commodity.dessert.cake13.amount = amount;
+ 
+  sumPrice();
+  
+})
+
+$("#dessert2_amount_add").click(function(){
+  let cake15_amount=$("#dessert2_amount").val();
+  console.log(cake15_amount);
+  let price =  commodity.dessert.cake14.price;
+  let amount = cake15_amount;
+  let localPrice = price * amount;
+  commodity.dessert.cake14.amount = amount;
+ 
+  sumPrice();
+  
+})
+
+$("#dessert2_amount_sub").click(function(){
+  let cake14_amount=$("#dessert2_amount").val();
+  console.log(cake14_amount);
+  let price =  commodity.dessert.cake14.price;
+  let amount = cake14_amount;
+  let localPrice = price * amount;
+  commodity.dessert.cake14.amount = amount;
+ 
+  sumPrice();
+  
+})
+
+$("#dessert3_amount_add").click(function(){
+  let cake15_amount=$("#dessert3_amount").val();
+  console.log(cake15_amount);
+  let price =  commodity.dessert.cake15.price;
+  let amount = cake15_amount;
+  let localPrice = price * amount;
+  commodity.dessert.cake15.amount = amount;
+ 
+  sumPrice();
+  
+})
+
+$("#dessert3_amount_sub").click(function(){
+  let cake13_amount=$("#dessert3_amount").val();
+  console.log(cake13_amount);
+  let price =  commodity.dessert.cake15.price;
+  let amount = cake13_amount;
+  let localPrice = price * amount;
+  commodity.dessert.cake15.amount = amount;
+ 
+  sumPrice();
+  
+})
+
+
+$("#dessert4_amount_add").click(function(){
+  let cake15_amount=$("#dessert4_amount").val();
+  console.log(cake15_amount);
+  let price =  commodity.dessert.cake16.price;
+  let amount = cake15_amount;
+  let localPrice = price * amount;
+  commodity.dessert.cake16.amount = amount;
+ 
+  sumPrice();
+  
+})
+
+$("#dessert4_amount_sub").click(function(){
+  let cake13_amount=$("#dessert4_amount").val();
+  console.log(cake13_amount);
+  let price =  commodity.dessert.cake16.price;
+  let amount = cake13_amount;
+  let localPrice = price * amount;
+  commodity.dessert.cake16.amount = amount;
+ 
+  sumPrice();
+  
 })
 
 
