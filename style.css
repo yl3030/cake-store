@@ -60,10 +60,16 @@ nav{
 	margin: 0 auto;
 }
 
-.nav-link{
+.nav-title{
 	font-size: 20px;
 	font-weight: 900;
 	margin: 0 15px;
+	color: #707070;
+}
+
+.nav-title:hover{
+	color: #e6b800;
+	text-decoration: none;
 }
 
 /* ＬＯＧＯ */
@@ -88,12 +94,15 @@ nav{
 #car {
 	display: inline-block;
 	font-family: "Noto Serif TC", serif;
-	font-size: 30px;
+	font-size: 24px;
 	font-weight: 900;
 	border-radius: 5px;
 	background-color: #e6b800;
 	height: 45px;
 	right: 0;
+	color: #fff;
+	padding: 10px;
+	line-height: 22px;
 }
 
 /* menu */
@@ -239,7 +248,30 @@ nav{
 	text-align: center;
 	max-width: 1000px;
 	margin: 0 auto 100px;
+	display:inline;
 }
+
+#icon ul {
+	display:block;
+	margin:10;
+	list-style:none;
+  }
+  
+  .icon-title{
+	list-style:none;
+  }
+  
+  #icon ul li{
+	display:inline-block;
+	vertical-align:top;
+	margin:0 -1px -1px 0;
+	height:100px; 
+	line-height:25px; 
+	background:#fffff;
+	padding:0 15px;
+	list-style:none; 
+	box-sizing:border-box;
+  }
 
 #icon h1 {
 	font-size: 36px;
