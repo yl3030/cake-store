@@ -6,7 +6,7 @@
 }
 
 /* 導覽列 */
-nav {
+/* nav {
 	display: flex;
 	justify-content: space-between;
 	padding: 15px 20px;
@@ -46,18 +46,40 @@ nav ol li a {
 nav ol li a:hover {
 	color: #e6b800;
 	text-decoration: none;
+} */
+
+#home{
+	display: none;
+}
+
+nav{
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-nav{
+	margin: 0 auto;
+}
+
+.nav-link{
+	font-size: 20px;
+	font-weight: 900;
+	margin: 0 15px;
 }
 
 /* ＬＯＧＯ */
-#logo {
+/* #logo {
 	font-family: "Noto Serif TC", serif;
 	font-size: 30px;
 	font-weight: 900;
 	display: inline-block;
-	/* background-color: yellow; */
 }
 
 #logo img {
+	width: 80px;
+	margin-right: 10px;
+} */
+
+.navbar-brand img{
 	width: 80px;
 	margin-right: 10px;
 }
@@ -73,8 +95,9 @@ nav ol li a:hover {
 	height: 45px;
 	right: 0;
 }
+
 /* menu */
-#menu {
+/* #menu {
 	display: none;
 	position: fixed;
 	right: 0;
@@ -83,7 +106,6 @@ nav ol li a:hover {
 	cursor: pointer;
 	z-index: 1;
 }
-
 
 #menu img {
 	width: 80px;
@@ -125,10 +147,10 @@ nav ol li a:hover {
 #menu #menu-box ul li a {
 	color: #707070;
 	text-decoration: none;
-	font-size:24px;
+	font-size: 24px;
 }
 
-#story {
+#home {
 	background-color: #e6b800;
 	display: inline-block;
 	width: 80%;
@@ -136,15 +158,14 @@ nav ol li a:hover {
 	border-radius: 30px;
 	text-align: center;
 	color: #fff !important;
-}
-
+} */
 
 /* 輪播圖 */
-.carousel-item img {
-    height:500px ;
-    object-fit: cover;
-}
 
+.carousel-item img {
+	height: 700px;
+	object-fit: cover;
+}
 /* 品牌故事 */
 #card {
 	display: grid;
@@ -191,6 +212,33 @@ footer {
 /* RWD*/
 /* 手機 */
 @media screen and (max-width: 768px) {
+	/* 漢堡健 */
+	/* #menu {
+		display: block;
+	}
+	#menu #menu-box {
+		width: 300px;
+		font-size: 20px;
+	}
+	#menu #menu-box ul li {
+		padding: 20px;
+	}
+	#menu #menu-box ul li a {
+		font-size: 20px;
+	}*/
+	#home{
+		display: block;
+	}
+
+	/* 導覽列 */
+	/* nav {
+		display: none;
+	} */ 
+
+	#car{
+		display: none;
+	}
+
 	/* 品牌故事 */
 	#card {
 		grid-template-columns: 1fr;
@@ -209,6 +257,25 @@ footer {
 }
 /* 平板 */
 @media screen and (min-width: 769px) {
+	/* 漢堡健 */
+	/* #menu {
+		display: block;
+	} */
+
+	/* 導覽列 */
+	/* nav {
+		display: none;
+	} */
+
+	#home{
+		display: block;
+	}
+
+	/* 購物車 */
+	#car{
+		display: none;
+	}
+
 	/* 品牌故事 */
 	#card {
 		grid-template-columns: 1fr;
@@ -227,6 +294,25 @@ footer {
 }
 /* 電腦 */
 @media screen and (min-width: 1024px) {
+	/* 漢堡健 */
+	/* #menu {
+		display: none;
+	} */
+
+	/* 導覽列 */
+	/* nav {
+		display: flex;
+	} */
+
+	#home{
+		display: none;
+	}
+
+	/* 購物車 */
+	#car{
+		display: block;
+	}
+	
 	/* 品牌故事 */
 	#card {
 		grid-template-columns: 1fr 1fr;
