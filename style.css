@@ -5,48 +5,6 @@
 	box-sizing: border-box;
 }
 
-/* 導覽列 */
-/* nav {
-	display: flex;
-	justify-content: space-between;
-	padding: 15px 20px;
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-	position: sticky;
-	top: 0;
-	height: 80px;
-	background-color: rgba(255, 255, 255, 1);
-	z-index: 1;
-}
-
-#nav-arrange {
-	display: grid;
-	grid-template-columns: 5% 90% 5%;
-}
-
-#title {
-	text-align: center;
-}
-
-nav ol {
-	display: inline-block;
-}
-
-nav ol li {
-	display: inline-block;
-	padding: 0 20px;
-}
-
-nav ol li a {
-	color: black;
-	text-decoration: none;
-	line-height: 50px;
-	font-size: 20px;
-}
-
-nav ol li a:hover {
-	color: #e6b800;
-	text-decoration: none;
-} */
 
 #home{
 	display: none;
@@ -72,19 +30,6 @@ nav{
 	text-decoration: none;
 }
 
-/* ＬＯＧＯ */
-/* #logo {
-	font-family: "Noto Serif TC", serif;
-	font-size: 30px;
-	font-weight: 900;
-	display: inline-block;
-}
-
-#logo img {
-	width: 80px;
-	margin-right: 10px;
-} */
-
 .navbar-brand img{
 	width: 80px;
 	margin-right: 10px;
@@ -105,69 +50,7 @@ nav{
 	line-height: 22px;
 }
 
-/* menu */
-/* #menu {
-	display: none;
-	position: fixed;
-	right: 0;
-	top: 0;
-	padding: 10px;
-	cursor: pointer;
-	z-index: 1;
-}
 
-#menu img {
-	width: 80px;
-	padding: 20px;
-	position: fixed;
-	top: 0;
-	right: 0;
-	cursor: pointer;
-}
-
-#menu:active #menu-box {
-	right: 0;
-}
-
-#menu:hover #menu-box {
-	right: 0;
-}
-
-#menu #menu-box {
-	position: absolute;
-	right: -400px;
-	top: 0;
-	width: 400px;
-	height: 100vh;
-	background-color: #fff;
-	-webkit-transition: 0.5s;
-	transition: 0.5s;
-	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
-}
-
-#menu #menu-box ul {
-	list-style: none;
-}
-
-#menu #menu-box ul li {
-	padding: 30px;
-}
-
-#menu #menu-box ul li a {
-	color: #707070;
-	text-decoration: none;
-	font-size: 24px;
-}
-
-#home {
-	background-color: #e6b800;
-	display: inline-block;
-	width: 80%;
-	padding: 10px 20px;
-	border-radius: 30px;
-	text-align: center;
-	color: #fff !important;
-} */
 
 /* 輪播圖 */
 
@@ -178,6 +61,12 @@ nav{
 
 /* --------------------------- */
 /* 最新消息 */
+#new-box2{
+
+	background-color: #f5f5f5;
+
+}
+
 #new-box {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -187,18 +76,16 @@ nav{
 	max-width: 1200px;
 	margin: 0px auto 100px;
 	padding: 10px 0;
-	background-color: #f5f5f5;
 }
 
 #active,
 #discount {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	/* grid-gap: 10px; */
+	grid-template-columns: 40% 60%;
+	grid-gap: 40px;
 	/* background:#e6b800; */
-	padding: 10px 30px;
+	padding: 10px;
 	border-radius: 5px;
-	justify-items: center;
 }
 
 .content {
@@ -209,7 +96,7 @@ nav{
 .content h1 {
 	font-size: 36px;
 	font-weight: 900;
-	text-align: right;
+	/* text-align: right; */
 }
 
 .new-img {
@@ -230,7 +117,6 @@ nav{
 	color: #e6b800;
 	text-decoration: none;
 	border-radius: 30px;
-	display: inline-block;
 	padding: 8px 15px;
 	border: 1px solid #e6b800;
 }
@@ -239,10 +125,6 @@ nav{
 	color: #fff;
 	background-color: #e6b800;
 	text-decoration: none;
-}
-
-.uuu{
-	display: inline-block;
 }
 
 /* --------------------------- */
@@ -506,10 +388,6 @@ footer {
 		display: block;
 	}
 
-	#car{
-		display: none;
-	}
-
 	/* 最新消息 */
 	#new-box {
 		grid-template-columns: 1fr;
@@ -559,21 +437,10 @@ footer {
 }
 /* 平板 */
 @media screen and (min-width: 769px) {
-	/* 漢堡健 */
-	/* #menu {
-		display: block;
-	} */
-
-	/* 導覽列 */
-	/* nav {
-		display: none;
-	} */
 
 	#home{
 		display: none;
 	}
-
-	
 
 	/* 最新消息 */
 	#new-box {
@@ -669,7 +536,7 @@ footer {
 
 	/* icon title */
 	.icon-title {
-		/* grid-template-columns: repeat(5, 1fr); */
+		grid-template-columns: repeat(5, 1fr);
 	}
 
 	/* icon內容 */
